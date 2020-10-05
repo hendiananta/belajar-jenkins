@@ -6,7 +6,7 @@ task connectToDatabase {
 }
 task extractDatabase {
     dependsOn connectToDatabase
-    println "Data Successfully extracted"
+    println "Data Successfully extracted saja"
 }
 task closeConnection {
     dependsOn << extractDatabase
