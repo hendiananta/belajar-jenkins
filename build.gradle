@@ -2,7 +2,7 @@ task setUpConnection {
     println "Setting up database connection"
 }
 task connectToDatabase {
-    dependsOn 'setUpConnection'
+    dependsOn 'setUpConnection sip'
 }
 task extractDatabase {
     dependsOn connectToDatabase
